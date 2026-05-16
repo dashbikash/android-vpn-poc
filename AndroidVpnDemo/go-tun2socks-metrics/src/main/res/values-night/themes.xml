@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DashVpnService" parent="Theme.Material3.DayNight">
+        <!-- Primary Brand Colors (Blue) -->
+        <item name="colorPrimary">@color/vpn_blue_primary</item>
+        <item name="colorOnPrimary">@color/vpn_blue_on_primary</item>
+        <item name="colorPrimaryContainer">@color/vpn_blue_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/vpn_blue_on_primary_container</item>
+
+        <!-- Secondary Brand Colors (Green) -->
+        <item name="colorSecondary">@color/vpn_green_secondary</item>
+        <item name="colorOnSecondary">@color/vpn_green_on_secondary</item>
+
+        <!-- Apply a custom style to force the Action Bar to use the Primary color -->
+        <item name="actionBarStyle">@style/Widget.DashVpn.ActionBar</item>
+        <!-- Optional: Color the status bar to match -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+</resources>

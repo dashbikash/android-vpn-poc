@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors (Blue) -->
+    <color name="vpn_blue_primary">#0061A4</color>
+    <color name="vpn_blue_on_primary">#FFFFFF</color>
+    <color name="vpn_blue_primary_container">#D1E4FF</color>
+    <color name="vpn_blue_on_primary_container">#001D36</color>
+
+    <!-- Secondary Colors (Green) -->
+    <color name="vpn_green_secondary">#386A20</color>
+    <color name="vpn_green_on_secondary">#FFFFFF</color>
+    <color name="vpn_green_secondary_container">#B7F397</color>
+    <color name="vpn_green_on_secondary_container">#042100</color>
+</resources>

@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 1. Change parent to standard DayNight (remove .NoActionBar) -->
+    <style name="Base.Theme.DashVpnService" parent="Theme.Material3.Light">
+
+        <!-- Primary Brand Colors (Blue) -->
+        <item name="colorPrimary">@color/vpn_blue_primary</item>
+        <item name="colorOnPrimary">@color/vpn_blue_on_primary</item>
+        <item name="colorPrimaryContainer">@color/vpn_blue_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/vpn_blue_on_primary_container</item>
+
+        <!-- Secondary Brand Colors (Green) -->
+        <item name="colorSecondary">@color/vpn_green_secondary</item>
+        <item name="colorOnSecondary">@color/vpn_green_on_secondary</item>
+
+        <!-- 2. Apply a custom style to force the Action Bar to use the Primary color -->
+        <item name="actionBarStyle">@style/Widget.DashVpn.ActionBar</item>
+        <!-- Optional: Color the status bar to match -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <!-- 3. Define the custom Action Bar style -->
+    <style name="Widget.DashVpn.ActionBar" parent="Widget.Material3.ActionBar.Solid">
+        <item name="background">?attr/colorPrimary</item>
+        <item name="titleTextStyle">@style/TextAppearance.DashVpn.ActionBar.Title</item>
+    </style>
+
+    <!-- 4. Ensure the Action Bar text is readable (White on Blue) -->
+    <style name="TextAppearance.DashVpn.ActionBar.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.DashVpnService" parent="Base.Theme.DashVpnService" />
+</resources>
